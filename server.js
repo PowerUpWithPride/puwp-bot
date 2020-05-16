@@ -59,8 +59,7 @@ client.registerCommand(
     description: "Add commentator",
     fullDescription:
       "Add a commentator with this command by @-mentioning them in public (Runners Only)",
-    argsRequired: true,
-    deleteCommand: true
+    argsRequired: true
   }
 );
 
@@ -151,4 +150,8 @@ app.use(function(request, response) {
 
 const listener = app.listen(process.env.PORT, function() {
   console.log("Your app is listening on port " + listener.address().port);
+});
+
+client.on("ready", () => { // When the bot is ready
+	    console.log("Ready!"); // Log "Ready!"
 });

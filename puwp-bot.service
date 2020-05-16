@@ -1,0 +1,12 @@
+[Unit]
+Description=PUWP Bot
+After=docker.service
+Requires=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a puwp-bot
+ExecStop=/usr/bin/docker stop -t 2 puwp-bot
+
+[Install]
+WantedBy=multi-user.target
