@@ -133,24 +133,7 @@ client.connect();
 
 // Start an http server so the circle stops
 // Might add some web functionality like invite requests, or other stuff
-const express = require("express");
 const http = require("http");
-
-const app = express();
-
-app.set("view engine", "pug");
-
-app.get("/", function(request, response) {
-  response.render("index");
-});
-
-app.use(function(request, response) {
-  response.status(404).render("404");
-});
-
-const listener = app.listen(process.env.PORT, function() {
-  console.log("Your app is listening on port " + listener.address().port);
-});
 
 client.on("ready", () => { // When the bot is ready
 	    console.log("Ready!"); // Log "Ready!"

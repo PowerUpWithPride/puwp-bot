@@ -1,18 +1,26 @@
 {
-  "name": "good-janet",
-  "version": "0.0.1",
+  "name": "puwp-bot",
+  "version": "0.0.2",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "eris": "^0.9.0",
-    "express": "^4.16.4",
-    "pug": "^2.0.3",
-    "imgur": "^0.3.1",
-    "lodash": "^4.17.11"
+    "eris": "^0.9.0"
   },
   "engines": {
     "node": "8.x"
-  }
+  },
+  "description": "based off oliviacpu's Janets:",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PowerUpWithPride/puwp-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PowerUpWithPride/puwp-bot/issues"
+  },
+  "homepage": "https://github.com/PowerUpWithPride/puwp-bot#readme"
 }
