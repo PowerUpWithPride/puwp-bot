@@ -1,4 +1,4 @@
-# Janets
+# puwp-bot
 
 based off oliviacpu's Janets:
 
